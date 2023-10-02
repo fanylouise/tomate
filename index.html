@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/tomato-svgrepo-com.svg" type="image/x-icon">
-  <!--CSS-->
-  <link rel="stylesheet" href="./Styles/geral.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/tomato-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="./Styles/geral.css" />
 
-  <title>t o m a t e</title>
-</head>
-<body>
-  
-  <script type="module" src="/Scripts/bg.js"></script>
-</body>
+    <title>t o m a t e</title>
+  </head>
+  <body id="body">
+    <header>
+      <h1>t o m a t e</h1>
+      <p>by<a href="https://fanylouise.netlify.app/" target="_blank"> fanylouise</a></p>
+    </header>
+    <main class="main">
+      <img src="https://source.unsplash.com/random/?wallpapers" alt="" />
+
+      <section class="pomodoro">
+        <section class="music">
+          <iframe  src="https://www.youtube.com/embed/vGgv-HtBNEw" title="Lofi Hip Hop Radio - Live Serenity and Relaxation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!--<svg
+            width="46"
+            height="46"
+            viewBox="0 0 46 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.25 34.5V9.58333L40.25 5.75V30.6667"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11.5 40.25C14.6756 40.25 17.25 37.6756 17.25 34.5C17.25 31.3244 14.6756 28.75 11.5 28.75C8.32436 28.75 5.75 31.3244 5.75 34.5C5.75 37.6756 8.32436 40.25 11.5 40.25Z"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M34.5 36.4167C37.6756 36.4167 40.25 33.8423 40.25 30.6667C40.25 27.491 37.6756 24.9167 34.5 24.9167C31.3244 24.9167 28.75 27.491 28.75 30.6667C28.75 33.8423 31.3244 36.4167 34.5 36.4167Z"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg> -->
+        </section>
+        <section class="task">
+          <input type="text" placeholder="task" class="taskInput">
+        </section>
+        <section class="clock">
+          <input type="time" class="time" value="24:60:60" step="1">
+        </section>
+        <section class="btns">
+          <button class="plus"><p>+</p></button>
+          <a href="" class="toggleClock">start</a>
+          <button class="minus"><p>-</p></button>
+        </section>
+      </section>
+      <span class="copy"><a href="https://unsplash.com/" target="_blank">photos by: Unsplash</a></span>
+    </main>
+   
+    <!-- Sound Effect by <a href="https://pixabay.com/pt/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=143029">UNIVERSFIELD</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=143029">Pixabay</a>-->
+    <audio src="./assets/69126_the-notification-email-143029.mp3 " class="notification"></audio>
+    <script src="/Scripts/index.js"></script>
+  </body>
 </html>
