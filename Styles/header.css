@@ -1,0 +1,18 @@
+header{
+  position: absolute;
+  width: 300px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  right: 0;
+  left: 0;
+  margin:0 auto;
+
+}
+h1{
+  color: #fff;
+  font-weight: 450;
+  font-family: 'Open Sans',sans-serif;
+}

@@ -1,20 +1,22 @@
 const clock = document.querySelector('.clock');
-let hours = document.querySelector('.hours');
-let minutes = document.querySelector('.minutes');
-let seconds = document.querySelector('.seconds');
+let toggleClock = document.querySelector('.toggleClock')
 
 let minus = document.querySelector('.minus')
 let plus = document.querySelector('.plus')
 
 let notification = document.querySelector('.notification')
-counterM = 0;
+let mask = document.querySelector('.mask')
+let btns = document.querySelector('.btns')
 
-let time = document.querySelector('.time')
+let min = 0;
+let sec = 0;
 
-plus.addEventListener('click',()=>{
-  minutes += 5
-})
 
-minus.addEventListener('click',()=>{
-  minutes.innerHTML -=5
-})
+minus.addEventListener('click',()=> {min-1});
+plus.addEventListener('click',()=>  {min+1});
+
+clock.innerHTML =`${min}:${sec}`;
+
+
+
+
