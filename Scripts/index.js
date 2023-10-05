@@ -1,22 +1,20 @@
-const clock = document.querySelector('.clock');
+const clock = document.querySelector('.clock')
 let toggleClock = document.querySelector('.toggleClock')
-
 let minus = document.querySelector('.minus')
 let plus = document.querySelector('.plus')
-
 let notification = document.querySelector('.notification')
-let mask = document.querySelector('.mask')
-let btns = document.querySelector('.btns')
 
-let min = 0;
-let sec = 0;
+let min = document.querySelector('.minutes')
+let sec = document.querySelector('.seconds')
+let hour = document.querySelector('.hour')
 
+let sixty = 60;
 
-minus.addEventListener('click',()=> {min-1});
-plus.addEventListener('click',()=>  {min+1});
-
-clock.innerHTML =`${min}:${sec}`;
-
-
-
-
+let pomodoro = () => {
+     setInterval(() => {
+    if(sixty != -1){
+       sec.value = sixty--
+    }else{sixty = 59}
+  } , 10)
+}
+toggleClock.addEventListener('click', pomodoro)
