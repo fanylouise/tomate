@@ -17,33 +17,39 @@
   <body id="body">
     <header>
       <h1>t o m a t e</h1>
-      <p>by<a href="https://fanylouise.netlify.app/" target="_blank"> fanylouise</a></p>
+      <h5>Foque com  <a class="informativo" href="https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro" target="_blank">Pomodoro</a></h5>
     </header>
     <main class="main">
-      <img src="https://source.unsplash.com/random/?wallpapers" alt="" />
+      
 
       <section class="pomodoro">
         <section class="music">
-          <input type="url" placeholder="playlist ou video do youtube" class="url">
-          <iframe  src="https://www.youtube.com/embed/vGgv-HtBNEw" title="Lofi Hip Hop Radio - Live Serenity and Relaxation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <input type="url" placeholder="Cole link do Youtube" class="url">
         </section>
-        <section class="task">
-          <input type="text" placeholder="task/tarefa" class="taskInput">
-        </section>
+          <div class="iframeDiv">
+          </div>
         <section class="clock">
-          <input type="number" placeholder="HH" class="hour" min="1">:
-          <input type="number" placeholder="MM" class="minutes" maxlength="02" min="1" max="60">:
-          <input type="number" placeholder="SS" class="seconds" minlength="2" maxlength="02" max="60" min="1">
+          <input type="number" placeholder="00" class="minutes" maxlength="02"  id="minutes" value="25"><span class="twoPoints">:</span>
+          <input type="number" placeholder="00" class="seconds" minlength="2" maxlength="02"  id="seconds" readonly>
         </section>
         <section class="btns">
           <button  class="toggleClock">start</button>
         </section>
-      </section>
-      <span class="copy"><a href="https://unsplash.com/" target="_blank">photos by: Unsplash</a></span>
+      </section> 
     </main>
-   
+  
     <!-- Sound Effect by <a href="https://pixabay.com/pt/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=143029">UNIVERSFIELD</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=143029">Pixabay</a>-->
     <audio src="./assets/69126_the-notification-email-143029.mp3 " class="notification"></audio>
-    <script src="/Scripts/index.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+      tippy('.url', {
+        content: 'Dica: Lo-fi,Clássica e Natureza',
+      });
+    </script>
+
+    <script src="./Scripts/index.js"></script>
   </body>
 </html>
