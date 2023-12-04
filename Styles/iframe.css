@@ -1,0 +1,41 @@
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+.url{
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #f5f2d0;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+input[type =url]::placeholder{
+  font-weight: 600;
+}
+.url:focus{
+  border: none;
+  outline: none;
+}
+.music{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+iframe{
+  border: none;
+  border-radius: 3px;
+}
+.tip{
+  color: #f5f2d0;
+  font-size:12px ;
+  font-weight: 600;
+  text-align: left;
+}

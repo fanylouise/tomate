@@ -21,137 +21,16 @@ a{
   color: #fff;
 }
 main{
-  
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   background-color: rgba(230, 56, 56, 0.809)
-}
-.clock{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-
-
-
-  font-size: 64px;
-  background: none;
-  border: none;
-  text-align: center;
-  max-width: 320px;
-}
-.pomodoro{
-  /* From https://css.glass */
-background: rgba(0, 0, 0, 0.967);
-border-radius: 15px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.8px);
--webkit-backdrop-filter: blur(2.8px);
-
-  display: flex;
-  justify-content: baseline;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px;
-  max-width: 320px;
-  margin-top: 60px;
-}
-.toggleClock{
-  font-size: 36px;
-  border: none;
-  text-decoration: none;
-  color: #c00d0d;
-  cursor: pointer;
-  font-weight: 600;
-  background: none;
-}
-.task{
-  border: 2px solid;
-  background-color: #f5f2d0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 12px;
-  outline: none;
-}
-.task:focus{
-  border: none;
-}
-.taskInput{
-  background: transparent;
-  color: rgb(11, 175, 88);
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  border: none;
-  padding: 5px;
-}
-.taskInput:focus{
-  border: none;
-  outline: none
-}
-.taskInput::placeholder{
-  text-align: center;
-  border: none;
 }
 .notification{
   display: none;
 }
-.url{
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #f5f2d0;
-  border-radius: 5px;
-  border: none;
-  font-weight: 600;
-  font-size: 15px;
-}
-input[type =url]::placeholder{
-  font-weight: 600;
-}
-.url:focus{
-  border: none;
-  outline: none;
-}
-.minutes, .seconds{
-  background-color: #f5f2d0;
-  color: #f5f2d0;
-  text-align: center;
-  background: none;
-  border:none;
-  outline: none;
-  width: 100px;
-  height: 50px;
-  font-weight: 600;
-  font-size: 36px;
-}
-.twoPoints{
- color: #f5f2d0; 
-}
-.minutes,.seconds::placeholder{
-  color:#f5f2d0;
 
-}
-input[type=number]::-webkit-inner-spin-button { 
-  -webkit-appearance: none;
-  
-}
-input[type=number] { 
- -moz-appearance: textfield;
- appearance: textfield;
-}
-.music{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 5px;
-}
-iframe{
-  border: none;
-  border-radius: 3px;
-}
+
