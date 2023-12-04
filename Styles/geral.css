@@ -32,5 +32,10 @@ main{
 .notification{
   display: none;
 }
-
-
+.footer{
+  padding: 25px;
+  font-weight: 600;
+}
+footer a{
+  border-bottom: 2px solid #fff;
+}

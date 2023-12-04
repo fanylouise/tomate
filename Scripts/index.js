@@ -40,6 +40,7 @@ let secondes =()=>{
       sec.value-=1
    },secondMiliseconds)
   }
+  
 }
 let minutes =()=>{
   if(min.value > 0){
@@ -63,7 +64,8 @@ let pomodoro = ()=>{
 let aplication = ()=>{
   musicLink();
   pomodoro();
-  start.classList.add('.displayNon')
+  start.remove()
+  restart.classList.remove('displayNon')
 } 
 
 let restartPomo = () =>{
