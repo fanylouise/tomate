@@ -3,7 +3,18 @@
 
 Focar e ter a música que gosta de fundo. 
 
-- Esolha o tempo;
+## Features
 - Adicione o Link do Youtube;
 - Notificação ao final;
-- Imagens relaxantes no fundo;
+
+## In the Future
+
+- Tempo de descanso;
+- Armazenar tempo de foco;
+- Criar um cheklist ao lado;
+
+
+
+
+
+
