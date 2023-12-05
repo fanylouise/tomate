@@ -50,7 +50,7 @@ backdrop-filter: blur(2.8px);
   font-size: 36px;
   border: none;
   text-decoration: none;
-  color: #c00d0d;
+  color: rgb(25, 173, 9);
   cursor: pointer;
   font-weight: 600;
   background: none;
@@ -59,7 +59,7 @@ backdrop-filter: blur(2.8px);
   display: none;
 }
 .restart{
-  font-size: 36px;
+  font-size: 40px;
   border: none;
   text-decoration: none;
   color: #c00d0d;

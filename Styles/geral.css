@@ -18,7 +18,7 @@ a {
 }
 a{
   text-decoration: none;
-  color: #fff;
+  color: #f5f2d0;
 }
 main{
   height: 100vh;
@@ -37,5 +37,5 @@ main{
   font-weight: 600;
 }
 footer a{
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #f5f2d0;
 }

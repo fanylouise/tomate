@@ -10,6 +10,7 @@ let sec = document.querySelector('.seconds');
 let min = document.querySelector('.minutes');
 let iframe= document.querySelector('.iframeDiv');
 
+
 const frasesPomodoro = [
   "Você consegue fazer qualquer coisa em 25 minutos. Até mesmo procrastinar.",
   "Lembre-se: o importante é a qualidade do trabalho, não a quantidade de tempo que você passa nele.",
@@ -59,13 +60,19 @@ let pomodoro = ()=>{
   minutes()
   
 }
-
+let ring = ()=>{
+  setTimeout(()=>{
+    notification.volume = 0.2;
+    notification.play()
+  },1505000)
+}
 
 let aplication = ()=>{
   musicLink();
   pomodoro();
   start.remove()
   restart.classList.remove('displayNon')
+  ring()
 } 
 
 let restartPomo = () =>{
